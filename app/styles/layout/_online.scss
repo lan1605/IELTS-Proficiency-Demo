@@ -64,12 +64,13 @@
         }
     }
     @media (min-width: 100px) and (max-width: 767px) {
-        min-height: 650px;
+        min-height: 550px;
         &-list{
             flex-wrap: wrap;
             padding: 0 20px;
             padding-top: 50px;
             gap: 30px;
+            margin-bottom: 50px;
         }
         &-item{
             &--img{
