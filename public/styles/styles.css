@@ -430,7 +430,8 @@ body {
     .header-text {
       width: initial; }
       .header-text--desc {
-        text-align: center; }
+        text-align: justify;
+        padding: 0 10px; }
     .header-btn--link {
       padding: 10px 15px; } }
 

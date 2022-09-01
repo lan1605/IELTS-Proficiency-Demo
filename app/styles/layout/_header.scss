@@ -367,7 +367,8 @@
         &-text{
             width: initial;
             &--desc{
-                text-align: center;
+                text-align: justify;
+                padding: 0 10px;
             }
         }
         &-btn--link{
