@@ -432,8 +432,10 @@ body {
       .header-text--desc {
         text-align: justify;
         padding: 0 10px; }
-    .header-btn--link {
-      padding: 10px 15px; } }
+    .header-btn {
+      gap: 0 20px; }
+      .header-btn--link {
+        padding: 10px 15px; } }
 
 .pricing {
   margin-bottom: 100px; }

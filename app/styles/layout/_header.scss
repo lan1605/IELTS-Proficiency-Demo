@@ -371,8 +371,11 @@
                 padding: 0 10px;
             }
         }
-        &-btn--link{
-            padding: 10px 15px;
+        &-btn{
+            gap: 0 20px;
+            &--link{
+                padding: 10px 15px;
         }
-    }
+        }
+}
 }
