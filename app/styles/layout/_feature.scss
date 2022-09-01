@@ -1,0 +1,231 @@
+.feature{
+    min-height: 1024px;
+    &-title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: $primary-color;
+    }
+    &-content{
+        width: 740px;
+        &:nth-child(1){
+            margin-right: 124px;
+            height: 203px;
+        } 
+        &:nth-child(2){
+
+            margin-left: 100px;
+            height: 236px;
+        } 
+    }
+    &-item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 42px;
+        &--object{
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 44px;
+            color: $primary-color;
+            position: relative;
+            &::after{
+                content: "";
+                padding: 0 65px;
+                border-bottom: 4px solid $secondary-color;
+                position: absolute;
+                left: 0;
+                margin-top: 55px;
+                border-radius: 25px
+            }
+        }
+        &:nth-child(1) > .feature-img{
+            padding-right: 100px;
+            
+        }
+        &:nth-child(2) > .feature-img{
+            width: 414px;
+            height: 414px;
+        }
+        &--title{
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &--desc{
+            margin-top: 30px;
+            font-size: 25px;
+            line-height: 29px;
+        }
+    }
+    @media (min-width:1024px) and (max-width:1180px) {
+        &-content{
+            &:nth-child(1){
+                margin-right: 50px;
+                margin-left: 50px;
+            } 
+            &:nth-child(2){
+    
+                margin-left: 50px;
+                margin-right: 40px;
+            } 
+        }
+        &-item{
+            &:nth-child(1) > .feature-img{
+                padding-right: 50px;
+                width: 30%;
+            }
+            &:nth-child(2) > .feature-img{
+                margin-left: 50px;
+                width: 314px;
+                height: 314px;
+            }
+            &--desc{
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &-item{
+            display: block;
+            &:nth-child(1){
+                position: relative;
+                & > .feature-img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding-right: 25px;
+                    object-fit: contain;
+                    flex-shrink: 0;
+                    width: unset;
+
+                }
+            }
+            &:nth-child(2){
+                & > .feature-img{
+                    display: none;
+                }
+            }
+        }
+        &-content{
+            &:nth-child(1){
+                padding: 0 20px;
+                margin-right: 0;
+                width: 515px;
+                margin-right: 250px;
+            }
+            &:nth-child(2){
+                margin-top: 100px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-right: 62px;
+            }
+        }
+        &-item{
+            &--object{
+                font-size: 30px;
+                &::after{
+                    content: "";
+                    padding: 0 55px;
+                }
+            }
+            &--title{
+                font-size: 25px;
+                line-height:24.80px;
+            }
+            &--desc{
+                margin-top: 30px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+    }
+    @media (min-width: 100px) and (max-width: 767px) {
+        min-height: 650px;
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: calc(100% /2);
+        }
+        &-item{
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            &:nth-child(1){
+                position: relative;
+                & > .feature-img{
+                    width: 144px;
+                    height: 154px;
+                    position: absolute;
+                    padding-right: 0;
+                    top: 0;
+                    left: 110%;
+                }
+            }
+            &:nth-child(2){
+                & > .feature-img{
+                    display: none;
+                }
+            }
+        }
+        &-content{
+            position: relative;
+            &:nth-child(1){
+                padding: 0 0px;
+                margin-right: 0;
+                position: absolute;
+                width: 227px;
+                height: 177px;
+                left: 34px;
+            }
+            &:nth-child(2){
+                // display: none;
+                position: absolute;
+                margin-top: 230px;
+                margin-left: 0px;
+                margin-right: 0px;
+                width: 300px;
+                height: 230px;
+                left: 34px;
+                // padding-right: 62px;
+            }
+        }
+        &-title{
+            font-size: 24px;
+
+        }
+        &-item{
+            &--object{
+                font-size: 18px;
+                line-height: 22px;
+                &::after{
+                    content: "";
+                    padding: 0 50px;
+                    margin-top: 35px;
+                    border-radius: 20px;
+                }
+            }
+            &--title{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &--desc{
+                margin-top: 20px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+}

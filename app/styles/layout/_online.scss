@@ -1,0 +1,97 @@
+.online{
+    min-height: 750px;
+    &-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0 89px;
+        padding-top: 142px;
+        gap: 40px;
+    }
+    &-item{
+        width: 235px;
+        &:nth-child(2){
+            width: 279px;
+        }
+        &--img{
+            top:0;
+            width: 269px;
+            height: 269px;
+            margin: 0 auto;
+        }
+    }
+    &-content{
+        text-align: center;
+        &--number{
+            font-weight: 700;
+            font-size: 29px;
+            line-height: 35px;
+            color: $secondary-color;
+            margin-bottom: 30px;
+        }
+        &--desc{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #3A3838;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1180px) {
+        &-list{
+            padding: 0 20px;
+            padding-top: 142px;
+            gap: 20px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        min-height: 1000px;
+        &-list{
+            flex-wrap: wrap;
+            padding: 0 70px;
+            padding-top: 120px;
+        }
+        &-item{
+            &--img{
+                width: 220px;
+                height: 220px;
+                margin: 0 auto;
+            }
+            width: 300px;
+            &:nth-child(2){
+                width: 300px;
+            }
+        }
+    }
+    @media (min-width: 100px) and (max-width: 767px) {
+        min-height: 550px;
+        &-list{
+            flex-wrap: wrap;
+            padding: 0 20px;
+            padding-top: 50px;
+            gap: 30px;
+        }
+        &-item{
+            &--img{
+                width: 134.5px;
+                height: 134.5px;   
+                margin: 0 auto;
+            }
+            width: 150px;
+            &:nth-child(2){
+                width: 150px;
+            }
+        }
+        &-content{
+            &--number{
+                font-size: 12px;
+                line-height: 15px;
+                margin-bottom: 0;
+            }
+            &--desc{
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+}

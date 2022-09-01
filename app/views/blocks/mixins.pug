@@ -1,0 +1,15 @@
+mixin onlineItem(src, number, desc)
+    .online-item 
+        img.online-item--img(src=src)
+        .online-content 
+            .online-content--number=number
+            .online-content--desc=desc
+mixin pricingItem(icon, text, bottom="", price="",comment="")
+    .pricing-item--object 
+        i.pricing-item--icon(class=icon)    
+        .pricing-item--text    
+            span.pricing-item--text__top=text
+            span.pricing-item--text__bottom=bottom
+        .pricing-item--number 
+            span.pricing-item--price=price
+            span.pricing-item--comment=comment

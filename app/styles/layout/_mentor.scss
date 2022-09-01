@@ -1,0 +1,93 @@
+.mentor{
+    min-height: 1024px;
+    background: linear-gradient(180deg, $primary-color 0%, #020043 100%);
+    color: white;
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 0 80px;
+        padding-top: 237px;
+        gap: 170px;
+    }
+    &-content{
+        width: 588px;
+        // height: 332px;
+        &--title{
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 700;
+            padding-bottom: 40px;
+        }
+        &--desc{
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+    }
+    &-img{
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    @media (min-width: 1024px) and (max-width: 1180px){
+        &-item{
+            gap: 50px;
+        }
+        &-content{
+            
+            &--desc{
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &-item{
+            flex-direction: column;
+            gap: 0;
+            padding: 0 70px;
+            padding-top: 120px;
+        }
+        &-img{
+            width: 80%;
+        }
+        &-content{
+            margin-top: 50px;
+            order: 2;
+            &--title{
+                font-size: 30px;
+    line-height: 24.80px;
+            }
+            &--desc{
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+    @media (min-width: 100px) and (max-width: 767px) {
+        min-height: 850px;
+        &-item{
+            flex-direction: column;
+            gap: 0;
+            padding: 0 30px;
+            padding-top: 100px;
+        }
+        // &-img{
+        //     width: 80%;
+        // }
+        &-content{
+            width: 326px;
+            margin-top: 50px;
+            order: 2;
+            &--title{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &--desc{
+                font-size: 12px;
+                line-height: 21px;
+            }
+        }
+    }
+}
