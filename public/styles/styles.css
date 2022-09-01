@@ -416,13 +416,23 @@ body {
         top: 0;
         left: 0;
         display: block;
-        margin-left: -300px;
+        margin-left: -70%;
         font-size: 30px;
         cursor: pointer; }
       .header-noti {
         margin-top: 195px;
         font-size: 11px;
         line-height: 13px; } }
+  @media (min-width: 100px) and (max-width: 335px) {
+    .header-title {
+      width: initial;
+      margin-left: 20px; }
+    .header-text {
+      width: initial; }
+      .header-text--desc {
+        text-align: center; }
+    .header-btn--link {
+      padding: 10px 15px; } }
 
 .pricing {
   margin-bottom: 100px; }
@@ -672,6 +682,14 @@ body {
         line-height: 12px; }
       .pricing-item--object:not(:first-child) {
         margin-top: 15px; } }
+  @media (min-width: 100px) and (max-width: 335px) {
+    .pricing-item {
+      width: 260px;
+      height: 500px; }
+      .pricing-item--btn {
+        left: 75px; }
+      .pricing-item--most {
+        margin-left: 20%; } }
 
 .feature {
   min-height: 1024px; }
@@ -869,6 +887,19 @@ body {
         margin-top: 20px;
         font-size: 12px;
         line-height: 15px; } }
+  @media (min-width: 100px) and (max-width: 336px) {
+    .feature {
+      min-height: 750px; }
+      .feature-item:nth-child(1) > .feature-img {
+        display: none; }
+      .feature-content:nth-child(2) {
+        width: initial;
+        margin-top: 280px; }
+      .feature-content:nth-child(1) {
+        width: 150%;
+        margin-bottom: 60px; }
+      .feature-title {
+        line-height: 20px; } }
 
 .mentor {
   min-height: 1024px;
@@ -959,6 +990,9 @@ body {
         .mentor-content--desc {
           font-size: 12px;
           line-height: 21px; } }
+  @media (min-width: 100px) and (max-width: 335px) {
+    .mentor-content {
+      width: initial; } }
 
 .monotonous {
   min-height: 1024px;
@@ -1176,6 +1210,9 @@ body {
         .tracking-content--desc {
           font-size: 12px;
           line-height: 21px; } }
+  @media (min-width: 100px) and (max-width: 335px) {
+    .tracking-content {
+      width: initial; } }
 
 .online {
   min-height: 750px; }

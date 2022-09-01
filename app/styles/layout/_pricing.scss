@@ -230,7 +230,18 @@
                 margin-top: 15px;
             }
         }
-
+    }
+}
+@media (min-width: 100px) and (max-width:335px){
+    &-item{
+        width: 260px;
+        height: 500px;
+        &--btn{
+            left: 75px;
+        }
+        &--most{
+            margin-left: 20%;
+        }
     }
 }
 }

@@ -349,7 +349,7 @@
             left: 0;
             // display: block !important;
             display: block;
-            margin-left: -300px;
+            margin-left: -70%;
             font-size: 30px;
             cursor: pointer;
         }
@@ -357,6 +357,21 @@
             margin-top: 195px;
             font-size: 11px;
             line-height: 13px;
+        }
+    }
+    @media (min-width: 100px) and (max-width:335px) {
+        &-title{
+            width: initial;
+            margin-left: 20px;
+        }
+        &-text{
+            width: initial;
+            &--desc{
+                text-align: center;
+            }
+        }
+        &-btn--link{
+            padding: 10px 15px;
         }
     }
 }

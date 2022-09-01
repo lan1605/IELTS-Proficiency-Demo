@@ -150,6 +150,7 @@
             }
         }
     }
+    
     @media (min-width: 100px) and (max-width: 767px) {
         min-height: 650px;
         &-list{
@@ -226,6 +227,24 @@
                 font-size: 12px;
                 line-height: 15px;
             }
+        }
+    }
+    @media (min-width:100px) and (max-width:336px) {
+        min-height: 750px;
+        &-item:nth-child(1) > .feature-img{
+            display: none;
+        }
+        &-content:nth-child(2) {
+            width: initial;
+            margin-top: 280px;
+        }
+        &-content:nth-child(1) {
+            width: 150%;
+            margin-bottom: 60px;
+        }
+        
+        &-title{
+            line-height: 20px;
         }
     }
 }
