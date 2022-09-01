@@ -1241,7 +1241,7 @@ body {
           width: 300px; } }
   @media (min-width: 100px) and (max-width: 767px) {
     .online {
-      min-height: 550px; }
+      min-height: 650px; }
       .online-list {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
